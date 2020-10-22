@@ -46,7 +46,7 @@ function bookmarklet() {
       document.getElementById("WLinvite").onclick = function() {
         var user = prompt("Type to user to invite to ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
         if(!user) return;
-        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/invite/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/invite_curator/?usernames=" + user});
         alert("Removed " + user + " from studio. Refresh to see updated changes.");
       }
 
