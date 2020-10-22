@@ -2,7 +2,7 @@ function bookmarklet() {
   var studioid = location.href.replace(/\D+/g, '');
     if(document.getElementById("curator-action-bar")) {
       var div = document.createElement("span");
-      div.innerHTML = '<div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLpromote"><span>Promote New Manager</span></div><div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLremove"><span>Invite New Manager</span></div><div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLleave"><span>Leave all Studios</span></div>';
+      div.innerHTML = '<div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLpromote"><span>Promote New Manager</span></div><div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLinvite"><span>Invite New Manager</span></div><div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLleave"><span>Leave all Studios</span></div>';
       document.getElementById("curator-action-bar").appendChild(div);
 
       document.getElementById("WLpromote").onclick = function() {
@@ -43,7 +43,7 @@ function bookmarklet() {
         alert("Promoted " + user + " to manager in all studios. Refresh to see updated changes.");
       }
 
-      document.getElementById("WLremove").onclick = function() {
+      document.getElementById("WLinvite").onclick = function() {
         var user = prompt("Type to user to invite to ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
         if(!user) return;
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/invite/?usernames=" + user});
