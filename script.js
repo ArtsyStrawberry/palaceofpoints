@@ -8,7 +8,22 @@ function bookmarklet() {
       document.getElementById("WLpromote").onclick = function() {
         var user = prompt("User to promote? (leave empty to cancel)");
         if(!user) return;
-        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4647409 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4931594 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5088204 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5163881 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5225333 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5268384 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5306784 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5348864 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5516116 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5586664 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5647632 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5750167 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5843568 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 6051843 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 14538307 + "/promote/?usernames=" + user});
+        
         alert("Promoted " + user + " from studio. Refresh to see updated changes.");
       }
 
