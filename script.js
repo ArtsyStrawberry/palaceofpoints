@@ -81,7 +81,7 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
       }
 
         document.getElementById("WLleave").onclick = function() {
-        var confirmation = confirm("Leave ALL PoP studios? Please confirm");
+        var confirmation = confirm("Leave ALL PoP studios? Please confirm (This option does not work yet, sorry about that)");
         if(!confirmation) return;
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         location.reload();
