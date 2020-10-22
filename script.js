@@ -6,7 +6,7 @@ function bookmarklet() {
       document.getElementById("curator-action-bar").appendChild(div);
 
       document.getElementById("WLpromote").onclick = function() {
-        var user = prompt("Type to user to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
+        var user = prompt("Type the username of the scratcher to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
         if(!user) return;
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/promote/?usernames=" + user});
@@ -44,10 +44,40 @@ function bookmarklet() {
       }
 
       document.getElementById("WLinvite").onclick = function() {
-        var user = prompt("Type to user to invite to ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
+        var user = prompt("Type the username of the scratcher to invite to ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
         if(!user) return;
-        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/invite_curator/?usernames=" + user});
-        alert("Removed " + user + " from studio. Refresh to see updated changes.");
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192306 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192310 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4201277 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4380199 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4647409 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4931594 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5088204 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5163881 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5225333 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5268384 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5306784 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5348864 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5516116 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5586664 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5647632 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5750167 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5843568 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 6051843 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 14538307 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25093561 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25383792 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25736997 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25979361 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26317863 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26537059 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26704289 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26919486 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27192324 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27509302 + "/invite_curator/?usernames=" + user});
+        alert("Invited " + user + " to all studios. Refresh to see updated changes.");
       }
 
         document.getElementById("WLleave").onclick = function() {
