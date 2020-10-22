@@ -6,7 +6,7 @@ function bookmarklet() {
       document.getElementById("curator-action-bar").appendChild(div);
 
       document.getElementById("WLpromote").onclick = function() {
-        var user = prompt("Type the username of the scratcher to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
+        var user = prompt("Type the username of the scratcher to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding.");
         if(!user) return;
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/promote/?usernames=" + user});
@@ -44,7 +44,7 @@ function bookmarklet() {
       }
 
       document.getElementById("WLinvite").onclick = function() {
-        var user = prompt("Type the username of the scratcher to invite to ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding (leave empty to cancel)");
+        var user = prompt("Type the username of the scratcher to invite to ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding.");
         if(!user) return;
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/invite_curator/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/invite_curator/?usernames=" + user});
