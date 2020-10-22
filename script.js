@@ -6,7 +6,7 @@ function bookmarklet() {
       document.getElementById("curator-action-bar").appendChild(div);
 alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by ArtsyStrawberry. This toolkit contains buttons to invite and promote a new PoP manager in all of the banking studios, the main studio, and the manager discussion. There is also an option to remove yourself from all PoP affiliated studios. Press OK to proceed.");
       document.getElementById("WLpromote").onclick = function() {
-        var user = prompt("Type the username of the scratcher to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding.");
+        var user = prompt("Type the username of the scratcher to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been invited to all of the studios before proceeding.");
         if(!user) return;
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/promote/?usernames=" + user});
