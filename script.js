@@ -4,7 +4,7 @@ function bookmarklet() {
       var div = document.createElement("span");
       div.innerHTML = '<div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLpromote"><span>Promote New Manager</span></div><div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLinvite"><span>Invite New Manager</span></div><div class="button grey small" style="margin-left:10px;color:red;font-weight:bold;" id="WLleave"><span>Leave all Studios</span></div>';
       document.getElementById("curator-action-bar").appendChild(div);
-
+alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by ArtsyStrawberry. This toolkit contains buttons to invite and promote a new PoP manager in all of the banking studios, the main studio, and the manager discussion. There is also an option to remove yourself from all PoP affiliated studios. Press OK to proceed.");
       document.getElementById("WLpromote").onclick = function() {
         var user = prompt("Type the username of the scratcher to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding.");
         if(!user) return;
@@ -81,7 +81,7 @@ function bookmarklet() {
       }
 
         document.getElementById("WLleave").onclick = function() {
-        var confirmation = confirm("Leave studio? Please confirm");
+        var confirmation = confirm("Leave ALL PoP studios? Please confirm");
         if(!confirmation) return;
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         location.reload();
