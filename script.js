@@ -81,15 +81,45 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
       }
 
         document.getElementById("WLleave").onclick = function() {
-        var confirmation = confirm("Leave ALL PoP studios? Please confirm (This option does not work yet, sorry about that)");
+        var confirmation = confirm("Leave ALL PoP studios? Please confirm.");
         if(!confirmation) return;
-        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192306 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192310 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4201277 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4380199 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4647409 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4931594 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5088204 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5163881 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5225333 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5268384 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5306784 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5348864 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5516116 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5586664 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5647632 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5750167 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5843568 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 6051843 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 14538307 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25093561 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25383792 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25736997 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 25979361 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26317863 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26537059 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26704289 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26919486 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27192324 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27509302 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         location.reload();
       }
     } else {
       var x = confirm("You are not a manager in this studio. Only possible action is to leave. If you want to leave, please press OK");
       if(x) {
-        var y = confirm("Leave studio? Please confirm");
+        var y = confirm("Leave studio? Please confirm.");
         if(y) {
           $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
           location.reload();
