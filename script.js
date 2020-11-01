@@ -39,6 +39,7 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26919486 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27192324 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27509302 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27859968 + "/promote/?usernames=" + user});
         
         alert("Promoted " + user + " to manager in all studios. Refresh to see updated changes.");
       }
@@ -77,6 +78,7 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26919486 + "/invite_curator/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27192324 + "/invite_curator/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27509302 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27859968 + "/invite_curator/?usernames=" + user});
         alert("Invited " + user + " to all studios. Refresh to see updated changes.");
       }
 
@@ -114,6 +116,7 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26919486 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27192324 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27509302 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 27859968 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         location.reload();
       }
     } else {
