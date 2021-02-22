@@ -8,7 +8,7 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
       document.getElementById("WLpromote").onclick = function() {
         var user = prompt("Type the username of the scratcher to promote in ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been invited to all of the studios before proceeding.");
         if(!user) return;
-        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/promote/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26491568 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192306 + "/promote/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192310 + "/promote/?usernames=" + user});
@@ -49,7 +49,7 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
       document.getElementById("WLinvite").onclick = function() {
         var user = prompt("Type the username of the scratcher to invite to ALL of the PoP banking studios + main studio + manager discussion! Please ensure that they have been promoted to manager before proceeding.");
         if(!user) return;
-        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/invite_curator/?usernames=" + user});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26491568 + "/invite_curator/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/invite_curator/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192306 + "/invite_curator/?usernames=" + user});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192310 + "/invite_curator/?usernames=" + user});
@@ -90,7 +90,7 @@ alert("Hello! Welcome to the PoP Manager Invitation + Promotion toolkit by Artsy
         document.getElementById("WLleave").onclick = function() {
         var confirmation = confirm("Leave ALL PoP studios? Please confirm.");
         if(!confirmation) return;
-        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4127027 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 26491568 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 5228741 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192306 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
         $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + 4192310 + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
